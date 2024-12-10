@@ -1,8 +1,8 @@
 ![Tec de Monterrey](images/logotecmty.png)
-# Act 3.4 - Actividad Integral de Árboles (Evidencia Competencia)
+# Act 3.4 - Comprehensive Activity on Trees (Competency Evidence)
 
-## <span style="color: rgb(26, 99, 169);">¿Qué tengo que hacer?</span>
-En este repositorio encontrarás los archivos de entrada, así como las salidas esperadas que podrás usar para probar tu implementación. También encontrarás un archivo "main.cpp". Ahí deberás implementar tu solución. En el archivo deberás colocar en la parte superior, en comentarios, tus datos. Por ejemplo:
+## <span style="color: rgb(26, 99, 169);">What Do I Have to Do?</span>
+In this repository, you will find the input files as well as the expected outputs to test your implementation. You will also find a "main.cpp" file. You must implement your solution in this file. At the top of the file, include your personal information in comments. For example:
 ```
 // =========================================================
 // File: main.cpp
@@ -10,19 +10,19 @@ En este repositorio encontrarás los archivos de entrada, así como las salidas 
 // Date: 01/01/2021
 // =========================================================
 ```
-<span style="text-decoration: underline;">De manera individual</span>, desarrolla la solución del siguiente problema:
+<span style="text-decoration: underline;">Individually</span>, develop the solution for the following problem:
 
-Considere un árbol enraizado. Un árbol con raíz tiene un vértice especial llamado raíz. Todos los bordes están dirigidos desde la raíz. El vértice *u* se llama hijo del vértice *v* y el vértice *v* se llama padre del vértice *u* si existe una arista dirigida de *v* a *u*. Un vértice se llama hoja si no tiene hijos y tiene un padre.
- 
-Llamemos abeto a un árbol enraizado si cada uno de sus vértices que no son hojas tiene al menos 3 hijos hojas. Dado un árbol enraizado, comprueba si es un abeto.
+Consider a rooted tree. A rooted tree has a special vertex called the root. All edges are directed from the root. Vertex *u* is called the child of vertex *v*, and vertex *v* is called the parent of vertex *u* if there is a directed edge from *v* to *u*. A vertex is called a leaf if it has no children and has a parent.
 
-## <span style="color: rgb(26, 99, 169);">**Entrada**</span>
-La primera línea contiene un número entero *n*: el número de vértices en el árbol (3 <= *n* <= 1000). Cada una de las siguientes *n* - 1 líneas contiene un número entero p<sub>i</sub> (1 <= *i* <= *n* - 1), el índice del padre del *i* + 1-ésimo vértice (1 <= p<sub>i</sub> <= i).
+Let’s define a spruce tree as a rooted tree where each of its vertices that are not leaves has at least 3 leaf children. Given a rooted tree, check whether it is a spruce tree.
 
-## <span style="color: rgb(26, 99, 169);">**Salida**</span>
-Despliega "Yes" si el árbol es un abeto y "No" en caso contrario.
+## <span style="color: rgb(26, 99, 169);">**Input**</span>
+The first line contains an integer *n*: the number of vertices in the tree (3 <= *n* <= 1000). Each of the following *n* - 1 lines contains an integer p<sub>i</sub> (1 <= *i* <= *n* - 1), the index of the parent of the *i* + 1-th vertex (1 <= p<sub>i</sub> <= i).
 
-## <span style="color: rgb(26, 99, 169);">**Ejemplo de entrada 1**</span>
+## <span style="color: rgb(26, 99, 169);">**Output**</span>
+Print "Yes" if the tree is a spruce tree, and "No" otherwise.
+
+## <span style="color: rgb(26, 99, 169);">**Sample Input 1**</span>
 ```
 7
 1
@@ -33,12 +33,12 @@ Despliega "Yes" si el árbol es un abeto y "No" en caso contrario.
 2
 ```
 
-## <span style="color: rgb(26, 99, 169);">**Ejemplo de salida 1**</span>
+## <span style="color: rgb(26, 99, 169);">**Sample Output 1**</span>
 ```
 No
 ```
 
-## <span style="color: rgb(26, 99, 169);">**Ejemplo de entrada 2**</span>
+## <span style="color: rgb(26, 99, 169);">**Sample Input 2**</span>
 ```
 8
 1
@@ -50,43 +50,41 @@ No
 3
 ```
 
-## <span style="color: rgb(26, 99, 169);">**Ejemplo de salida 2**</span>
+## <span style="color: rgb(26, 99, 169);">**Sample Output 2**</span>
 ```
 Yes
 ```
 
-Para probar tu implementación, compila tu programa con el comando:
+To test your implementation, compile your program with the command:
 ```
 g++ -std=c++11 main.cpp -o app
 ```
-Posteriormente, prueba con cada uno de los archivos de entrada de prueba que encontrarás en este repositorio (input1.txt, input2.txt, input3.txt, input4.txt). Los resultados que debes obtener se encuentran en los archivos llamados output1.txt, output1.txt, output1.txt y output1.txt. Para realizar las pruebas, puedes usar las siguientes líneas de código. Por ejemplo, si queremos probar con el archivo de prueba "input1.txt".
+Then, test your solution with each of the input files provided in this repository (`input1.txt`, `input2.txt`, `input3.txt`, `input4.txt`). The expected results are in the files `output1.txt`, `output2.txt`, `output3.txt`, and `output4.txt`. To perform the tests, you can use the following commands. For example, to test with the file "input1.txt":
 ```
 ./app < input1.txt > mysolution1.txt
 diff mysolution1.txt output1.txt
 ```
-Si el segundo comando no tenga ninguna salida, sabrás que los resultados que obtuviste son los esperados. 
+If the second command produces no output, you know your results are as expected.
 
-Por último, realiza una investigación y reflexión en forma individual de la importancia y eficiencia del uso de los diferentes algoritmos de ordenamiento y búsqueda en una situación problema de esta naturaleza, generando un documento llamado **"ReflexAct3.4.pdf"**
+Finally, conduct individual research and reflection on the importance and efficiency of different sorting and searching algorithms in a problem situation like this, generating a document titled **"ReflexAct3.4.pdf"**.
 
-## <span style="color: rgb(26, 99, 169);">**¿Bajo qué criterios se evalúa mi evidencia?**</span>
+## <span style="color: rgb(26, 99, 169);">**How Is My Evidence Evaluated?**</span>
 
-- **80%** - Para cada una de las funcionalidades se evaluará:
+- **80%** - For each functionality, the evaluation will be:
+    - **Excellent (80%)** - correctly passes all test cases.
+    - **Very Good (60%)** - correctly passes 75% of test cases.
+    - **Good (40%)** - correctly passes 50% of test cases.
+    - **Insufficient (20%)** - correctly passes less than 50% of test cases.
 
-    - **Excelente (80%)** - pasa correctamente todos los casos de prueba.
-    - **Muy Bien (60%)** - pasa correctamente el 75% de los casos de prueba.
-    - **Bien (40%)** - pasa correctamente el 50% de los casos de prueba.
-    - **Insuficiente (20%)** - pasa correctamente menos del 50% de los casos de prueba.
+- **10%** - The code must follow the coding standards specified in the document: <span class="instructure_file_holder link_holder">[coding_standard_link](estandar.pdf)</span>.
+- **10%** - Function names in the application must be respected.
 
-
-- **10%** - El código deberá seguir los lineamientos estipulados en el estándar de codificación: <span class="instructure_file_holder link_holder">[liga_estándar_codificación](estandar.pdf)</span>
-- **10%** - Se respetenan los nombres de las funciones en la aplicación.
-
-## <span style="color: rgb(26, 99, 169);">**¿Dónde la entrego?**</span>
-Esta actividad forma parte tanto de tu calificación final del curso, así como del portafolio de evidencias de las competencias a desarrollar del curso, por lo que se te pide que en forma individual:
-* Realices una entrega de  los archivos correspondientes de los algoritmos de ordenamiento y búsqueda, en la sección correspondiente dentro de esta plataforma, así como el documento de reflexión individual (**ReflexAct3.4.pdf**).
-* Generes una carpeta en forma personal llamada **TC1031(Portafolio_Final)** que servirá como preparación para la entrega del portafolio de competencias que se realizará al final del curso, esta carpeta debe contener 5 carpetas:
+## <span style="color: rgb(26, 99, 169);">**Where Do I Submit It?**</span>
+This activity is part of your final course grade as well as the portfolio of evidence for the competencies to be developed in the course. Therefore, individually:
+* Submit the corresponding files for the sorting and searching algorithms in the appropriate section of this platform, along with the individual reflection document (**ReflexAct3.4.pdf**).
+* Create a personal folder named **TC1031(Final_Portfolio)** to prepare for the portfolio of competencies submission at the end of the course. This folder must contain 5 subfolders:
     * Act1.3
     * Act2.3
-    * **Act3.4** - coloca aquí tus archivos que solucionaron la <span style="text-decoration: underline;">actividad 1.3</span> así como el documento de reflexión individual (**ReflexAct3.4.pdf**).
+    * **Act3.4** - place your files that solved <span style="text-decoration: underline;">activity 3.4</span> along with the individual reflection document (**ReflexAct3.4.pdf**).
     * Act4.3
     * Act5.2
